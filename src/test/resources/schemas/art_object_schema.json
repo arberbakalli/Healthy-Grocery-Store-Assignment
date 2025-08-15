@@ -1,0 +1,681 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "elapsedMilliseconds": {
+      "type": "number"
+    },
+    "artObject": {
+      "type": "object",
+      "properties": {
+        "links": {
+          "type": "object",
+          "properties": {
+            "search": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "search"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "objectNumber": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "copyrightHolder": {
+          "type": "null",
+          "properties": {}
+
+        },
+        "webImage": {
+          "type": "object",
+          "properties": {
+            "guid": {
+              "type": "string",
+              "minLength": 1
+            },
+            "offsetPercentageX": {
+              "type": "number"
+            },
+            "offsetPercentageY": {
+              "type": "number"
+            },
+            "width": {
+              "type": "number"
+            },
+            "height": {
+              "type": "number"
+            },
+            "url": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "guid",
+            "offsetPercentageX",
+            "offsetPercentageY",
+            "width",
+            "height",
+            "url"
+          ]
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "colorsWithNormalization": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "normalizedColors": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "normalized32Colors": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "materialsThesaurus": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "techniquesThesaurus": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "productionPlacesThesaurus": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "titles": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "labelText": {
+          "type": "null",
+          "properties": {}
+
+        },
+        "objectTypes": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "objectCollection": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "makers": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "principalMakers": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "required": [
+              "name",
+              "unFixedName",
+              "placeOfBirth",
+              "dateOfBirth",
+              "dateOfDeath",
+              "placeOfDeath",
+              "nationality",
+              "labelDesc"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              },
+              "unFixedName": {
+                "type": "string",
+                "minLength": 1
+              },
+              "placeOfBirth": {
+                "type": "string",
+                "minLength": 1
+              },
+              "dateOfBirth": {
+                "type": "string",
+                "minLength": 1
+              },
+              "dateOfBirthPrecision": {
+                "type": ["null","object"],
+                "properties": {}
+
+              },
+              "dateOfDeath": {
+                "type": "string",
+                "minLength": 1
+              },
+              "dateOfDeathPrecision": {
+                "type": ["null","object"],
+                "properties": {}
+
+              },
+              "placeOfDeath": {
+                "type": "string",
+                "minLength": 1
+              },
+              "occupation": {
+                "type": "array",
+                "items": {
+                  "properties": {}
+                }
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "properties": {}
+                }
+              },
+              "nationality": {
+                "type": "string",
+                "minLength": 1
+              },
+              "biography": {
+                "type": ["null","object"],
+                "properties": {}
+
+              },
+              "productionPlaces": {
+                "type": "array",
+                "items": {
+                  "properties": {}
+                }
+              },
+              "qualification": {
+                "type": ["object","null","string"],
+                "properties": {}
+
+              },
+              "labelDesc": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "plaqueDescriptionDutch": {
+          "type": ["null","string"],
+          "minLength": 1
+        },
+        "plaqueDescriptionEnglish": {
+          "type":["null", "string"],
+          "minLength": 1
+        },
+        "principalMaker": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artistRole": {
+          "type": "null",
+          "properties": {}
+        },
+        "associations": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "acquisition": {
+          "type": "object",
+          "properties": {
+            "method": {
+              "type": "string",
+              "minLength": 1
+            },
+            "date": {
+              "type": "string",
+              "minLength": 1
+            },
+            "creditLine": {
+              "type": ["null","string"],
+              "minLength": 1
+            }
+          },
+          "required": [
+            "method",
+            "date",
+            "creditLine"
+          ]
+        },
+        "exhibitions": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "techniques": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "productionPlaces": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "dating": {
+          "type": "object",
+          "properties": {
+            "presentingDate": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sortingDate": {
+              "type": "number"
+            },
+            "period": {
+              "type": "number"
+            },
+            "yearEarly": {
+              "type": "number"
+            },
+            "yearLate": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "presentingDate",
+            "sortingDate",
+            "period",
+            "yearEarly",
+            "yearLate"
+          ]
+        },
+        "classification": {
+          "type": "object",
+          "properties": {
+            "iconClassIdentifier": {
+              "type": "array",
+              "items": {
+                "properties": {}
+              }
+            },
+            "iconClassDescription": {
+              "type": "array",
+              "items": {
+                "properties": {}
+              }
+            },
+            "motifs": {
+              "type": "array",
+              "items": {
+                "properties": {}
+              }
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "properties": {}
+              }
+            },
+            "periods": {
+              "type": "array",
+              "items": {
+                "properties": {}
+              }
+            },
+            "places": {
+              "type": "array",
+              "items": {
+                "properties": {}
+              }
+            },
+            "people": {
+              "type": "array",
+              "items": {
+                "properties": {}
+              }
+            },
+            "objectNumbers": {
+              "type": "array",
+              "items": {
+                "properties": {}
+              }
+            }
+          },
+          "required": [
+            "iconClassIdentifier",
+            "iconClassDescription",
+            "motifs",
+            "events",
+            "periods",
+            "places",
+            "people",
+            "objectNumbers"
+          ]
+        },
+        "hasImage": {
+          "type": "boolean"
+        },
+        "historicalPersons": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "inscriptions": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "documentation": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "catRefRPK": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "principalOrFirstMaker": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dimensions": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "required": [
+              "unit",
+              "type",
+              "part",
+              "value"
+            ],
+            "properties": {
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              },
+              "type": {
+                "type": "string",
+                "minLength": 1
+              },
+              "precision": {
+                "type": ["null","object"],
+                "properties": {}
+
+              },
+              "part": {
+                "type": ["null", "string"],
+                "minLength": 1
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "physicalProperties": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "physicalMedium": {
+          "type": "string",
+          "minLength": 1
+        },
+        "longTitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subTitle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scLabelLine": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": ["null","string"],
+              "minLength": 1
+            },
+            "makerLine": {
+              "type": ["null","string"],
+              "minLength": 1
+            },
+            "description": {
+              "type": ["null","string"],
+              "minLength": 1
+            },
+            "notes": {
+              "type": ["null","string"],
+              "minLength": 1
+            },
+            "date": {
+              "type": ["null","string"],
+              "minLength": 1
+            }
+          },
+          "required": [
+            "title",
+            "makerLine",
+            "description",
+            "notes",
+            "date"
+          ]
+        },
+        "showImage": {
+          "type": "boolean"
+        },
+        "location": {
+          "type": ["null","string"],
+          "minLength": 1
+        }
+      },
+      "required": [
+        "links",
+        "id",
+        "priref",
+        "objectNumber",
+        "language",
+        "title",
+        "copyrightHolder",
+        "webImage",
+        "colors",
+        "colorsWithNormalization",
+        "normalizedColors",
+        "normalized32Colors",
+        "materialsThesaurus",
+        "techniquesThesaurus",
+        "productionPlacesThesaurus",
+        "titles",
+        "description",
+        "labelText",
+        "objectTypes",
+        "objectCollection",
+        "makers",
+        "principalMakers",
+        "plaqueDescriptionDutch",
+        "plaqueDescriptionEnglish",
+        "principalMaker",
+        "artistRole",
+        "associations",
+        "acquisition",
+        "exhibitions",
+        "materials",
+        "techniques",
+        "productionPlaces",
+        "dating",
+        "classification",
+        "hasImage",
+        "historicalPersons",
+        "inscriptions",
+        "documentation",
+        "catRefRPK",
+        "principalOrFirstMaker",
+        "dimensions",
+        "physicalProperties",
+        "physicalMedium",
+        "longTitle",
+        "subTitle",
+        "scLabelLine",
+        "label",
+        "showImage",
+        "location"
+      ]
+    },
+    "artObjectPage": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "similarPages": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "lang": {
+          "type": "string",
+          "minLength": 1
+        },
+        "objectNumber": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "properties": {}
+          }
+        },
+        "plaqueDescription": {
+          "type": ["null","string"],
+          "minLength": 1
+        },
+        "audioFile1": {
+          "type": ["null","object"],
+          "properties": {}
+        },
+        "audioFileLabel1": {
+          "type": ["null","object"],
+          "properties": {}
+        },
+        "audioFileLabel2": {
+          "type": ["null","object"],
+          "properties": {}
+        },
+        "createdOn": {
+          "type": "string",
+          "minLength": 1
+        },
+        "updatedOn": {
+          "type": "string",
+          "minLength": 1
+        },
+        "adlibOverrides": {
+          "type": "object",
+          "properties": {
+            "titel": {
+              "type": ["null","object"],
+              "properties": {}
+            },
+            "maker": {
+              "type": ["null","object"],
+              "properties": {}
+            },
+            "etiketText": {
+              "type": ["object","null"],
+              "properties": {}
+            }
+          },
+          "required": [
+            "titel",
+            "maker",
+            "etiketText"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "similarPages",
+        "lang",
+        "objectNumber",
+        "tags",
+        "plaqueDescription",
+        "audioFile1",
+        "audioFileLabel1",
+        "audioFileLabel2",
+        "createdOn",
+        "updatedOn",
+        "adlibOverrides"
+      ]
+    }
+  },
+  "required": [
+    "elapsedMilliseconds",
+    "artObject",
+    "artObjectPage"
+  ]
+}
