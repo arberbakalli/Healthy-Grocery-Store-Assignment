@@ -1,5 +1,6 @@
 # Healthy-Grocery-Store-Assignment
 This assignment is based on the requirements from the pdf file sent.
+[![Rijksmuseum API CI/CD](https://github.com/arberbakalli/Healthy-Grocery-Store-Assignment/actions/workflows/mvn.yaml/badge.svg?branch=main)](https://github.com/arberbakalli/Healthy-Grocery-Store-Assignment/actions/workflows/mvn.yaml)
 
 ## About Me
 I'd like to thank you for giving me the chance and opportunity to showcase what I know and how I approach problem solving.
